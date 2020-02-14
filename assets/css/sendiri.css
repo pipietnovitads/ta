@@ -1,0 +1,189 @@
+/*css yang dibuat ada 2 yaitu 
+css desktop dan css mobile
+*/
+body
+{
+/*font-family: 'Open Sans', sans-serif;*/
+/*font-family: 'Be Vietnam', sans-serif;*/
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+#wrapper
+{
+	width:100%;
+	background: #202020; 
+}
+/*area illegal dihilangkan*/
+.navbar
+{
+	margin-bottom: 0px;
+}
+
+/*navbar atas*/
+.navbar-default
+{
+	background-color: #008080;
+	border-color: #008080;
+	padding: 6px;
+}
+
+.navbar-default .navbar-brand
+{
+	color: #f4f4f4;
+}
+
+.navbar-default .navbar-brand:hover
+{
+	color: #f4f4f4;
+}
+/*setelah dikunjungi warnanya kembali lagi seperti semula*/
+.navbar-default .navbar-brand:visited
+{
+	color: #f4f4f4;
+}
+
+/*untuk 3 strip mobile*/
+.navbar-default .navbar-toggle .icon-bar
+{
+ background-color: #f4f4f4;
+}
+
+/*user pada navbar side*/
+.navbar-side .user
+{
+	padding: 20px;
+  text-align: center;
+}
+
+.navbar-side .user img
+{
+	width: 50%;
+}
+
+.navbar-side .user h3
+{
+	color: #f4f4f4;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.navbar-side .user p
+{
+	color: #f2f2f2;
+	font-size: 14px;
+}
+
+.navbar-side
+{
+	background: #202020;
+}
+/*garis bawah pada sidebar*/
+.navbar-side ul li 
+{
+	border-bottom: 1px solid rgba(107, 108, 109, 0.19);
+}
+
+/*tulisan pada sidebar*/
+.navbar-side ul li a
+{
+	color: #fff;
+}
+.navbar-side ul li a:hover
+{
+	color: #202020;
+}
+.navbar-side ul li a:focus
+{
+	color: #202020;
+}
+/*css dropdown menu*/
+.navbar-side .tr-tree > .tr-tree-menu
+{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	display: none;
+}
+.navbar-side .tr-tree > .tr-tree-menu li a
+{
+	padding: 10px;
+	display:block;
+	font-size: 13px;
+}
+.navbar-side .tr-tree > .tr-tree-menu li a:hover
+{
+	background: #f4f4f4;
+	text-decoration: none;
+}
+.navbar-side .tr-tree > .tr-tree-menu li.active a
+{
+	background-color: #f9f9f9;
+	color: #222;
+	font-weight: bold;
+}
+
+/*content*/
+#page-wrapper
+{
+padding: 15px;
+background: #f3f3f3;
+}
+
+#page-inner
+{
+	background: #fff;
+	padding: 15px;
+}
+.text-footer{
+		padding: 15px 0px 5px 0px;
+		color: #222;
+		background: #fff;
+	}
+/*spesifik css desktop*/
+@media(min-width: 768px)
+{
+	#page-wrapper
+	{
+		/*jarum jam*/
+		margin: 0 0 0 260px;
+		padding: 15px
+		min-height: 530px;
+	}
+	
+	#page-inner
+	{
+		min-height: 800px;
+	}
+	.navbar-side
+	{
+		width: 260px;
+		position: absolute;
+		/*mengangkat satu lapisan diatas page-wrapper*/
+		z-index: 1;
+		min-height: 530px;
+	}
+
+	#page-wrapper-footer{
+		margin: -10 0 0 260px;
+		background: #202020;
+		z-index: 2;
+	}
+
+	.text-footer{
+		padding: 15px 0px 5px 0px;
+		margin: 0 0 0 260px;
+		color: #222;
+		background: #fff;
+	}
+	
+}
+
+#thetable tr th {
+	text-align: center;
+	padding: 10px;
+}
+
+tr th {
+	text-align: center;
+	padding: 10px;
+}
